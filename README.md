@@ -1,6 +1,6 @@
 # Floating Countdown
 
-一个基于 Electron 的桌面悬浮倒计时程序，支持 Windows 和 macOS。
+一个桌面悬浮倒计时程序，支持 Windows 和 macOS。项目保留 Electron 版本，同时提供 Qt Quick / QML 原生版本用于发布更小的安装包。
 
 ## 功能
 
@@ -36,33 +36,50 @@ ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm install
 
 ## 发布与打包
 
-### Qt Quick 原生版
+### Qt Quick / QML 原生版
 
-项目同时提供 Qt Quick / QML 原生版，目录位于 `native/qt-qml/`。Qt 版目标是比 Electron 包更小，并提供更接近现代悬浮工具的界面效果；当前优先生成 Windows ARM64 包。
+项目同时提供 Qt Quick / QML 原生版，目录位于 `native/qt-qml/`。Qt 版目标是比 Electron 包更小，并提供统一的现代悬浮卡片界面。v2.0 已发布 Windows ARM64、Windows x64 和 macOS Apple Silicon 包。
 
-Windows ARM64 构建与打包：
+Windows ARM64 打包：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File native\qt-qml\scripts\package-windows-arm64.ps1
 ```
 
-产物位于：
+Windows x64 打包：
 
-- `release-native/FloatingCountdown-win32-arm64-qt.zip`
+```powershell
+powershell -ExecutionPolicy Bypass -File native\qt-qml\scripts\package-windows-x64.ps1
+```
+
+macOS Apple Silicon 打包：
+
+```bash
+./native/qt-qml/scripts/package-macos-arm64.sh
+```
+
+Qt 原生版产物位于 `release-native/`：
+
+- `FloatingCountdown-darwin-arm64-qt.zip`：macOS Apple Silicon
+- `FloatingCountdown-win32-arm64-qt.exe`：Windows ARM64 单文件启动器
+- `FloatingCountdown-win32-arm64-qt.zip`：Windows ARM64 目录包
+- `FloatingCountdown-win32-x64-qt.exe`：Windows x64 单文件启动器
+- `FloatingCountdown-win32-x64-qt.zip`：Windows x64 目录包
 
 ### 下载发布包
 
-已发布的 Windows 和 macOS ZIP 包可以在 GitHub Releases 下载：
+已发布的 Windows 和 macOS 包可以在 GitHub Releases 下载：
 
 - <https://github.com/kicocolor/FloatingCountdown/releases>
-- 最新版本：<https://github.com/kicocolor/FloatingCountdown/releases/tag/v1.0.1>
+- 最新版本：<https://github.com/kicocolor/FloatingCountdown/releases/tag/v2.0>
 
-当前发布包包含：
+v2.0 发布包包含：
 
-- `FloatingCountdown-win32-x64.zip`：Windows x64
-- `FloatingCountdown-win32-arm64.zip`：Windows ARM64
-- `FloatingCountdown-darwin-x64.zip`：macOS Intel
-- `FloatingCountdown-darwin-arm64.zip`：macOS Apple Silicon
+- `FloatingCountdown-darwin-arm64-qt.zip`：macOS Apple Silicon
+- `FloatingCountdown-win32-arm64-qt.exe`：Windows ARM64 单文件启动器
+- `FloatingCountdown-win32-arm64-qt.zip`：Windows ARM64 目录包
+- `FloatingCountdown-win32-x64-qt.exe`：Windows x64 单文件启动器
+- `FloatingCountdown-win32-x64-qt.zip`：Windows x64 目录包
 
 ### 打包命令
 
@@ -88,7 +105,7 @@ ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm run package:win
 
 ### 打包产物
 
-完整 ZIP 产物位于 `release/`，适合上传到 GitHub Releases：
+Electron 版完整 ZIP 产物位于 `release/`，适合上传到 GitHub Releases：
 
 - `FloatingCountdown-win32-x64.zip`
 - `FloatingCountdown-win32-arm64.zip`
@@ -105,11 +122,11 @@ ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm run package:win
 - `FloatingCountdown-win32-arm64.zip.part-00`
 - `FloatingCountdown-win32-arm64.zip.part-01`
 
-Gitee 分卷合并说明见 `release-gitee/README-GITEE-RELEASE.txt`，校验值见 `release-gitee/SHA256SUMS.txt`。
+Gitee 分卷合并说明见 `release-gitee/README-GITEE-RELEASE.txt`，校验值见 `release-gitee/SHA256SUMS.txt`。Qt 原生版发布产物位于 `release-native/`，不提交进 Git，只上传到 GitHub Releases。
 
 ### 运行打包产物
 
-Windows 解压对应架构的 ZIP 后，运行目录内的 `FloatingCountdown.exe`。macOS 解压对应架构的 ZIP 后，运行 `FloatingCountdown.app`。
+Windows 可以直接运行对应架构的 Qt 单文件 `.exe`，首次启动会解压运行时，后续会复用缓存目录加快启动；也可以解压 ZIP 后运行目录内的 `FloatingCountdown.exe`。macOS 解压对应架构的 ZIP 后，运行 `FloatingCountdown.app`。
 
 ## 当前范围
 
