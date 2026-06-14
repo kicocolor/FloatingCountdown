@@ -6,3 +6,5 @@ release/FloatingCountdown-darwin-x64/
 .DS_Store
 release/*.zip
 release-gitee/
+release-native/
+native/qt-qml/build/

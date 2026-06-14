@@ -1,0 +1,170 @@
+2026-06-15 00:24:38,540 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/Updates.xml.sha256
+2026-06-15 00:24:42,271 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/Updates.xml.sha256
+2026-06-15 00:24:53,065 - aqt.main - INFO - installer 8348376704 aqtinstall(aqt) v3.3.0 on Python 3.13.3 [CPython Clang 17.0.0 (clang-1700.0.13.3)]
+2026-06-15 00:24:53,065 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/Updates.xml.sha256
+2026-06-15 00:24:55,967 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/extensions/qtwebengine/683/clang_64/Updates.xml.sha256
+2026-06-15 00:24:59,041 - aqt.archives - INFO - archives 8348376704 Found extension qtwebengine
+2026-06-15 00:24:59,042 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/extensions/qtpdf/683/clang_64/Updates.xml.sha256
+2026-06-15 00:25:03,752 - aqt.archives - INFO - archives 8348376704 Found extension qtpdf
+2026-06-15 00:25:04,153 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtbase-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z.sha256
+2026-06-15 00:25:04,153 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtdeclarative-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z.sha256
+2026-06-15 00:25:04,153 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qttools-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z.sha256
+2026-06-15 00:25:05,756 - aqt.helper - INFO - helper 8348376704 Downloading qtbase...
+2026-06-15 00:25:05,756 - aqt.installer - DEBUG - installer 8348376704 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtbase-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z
+2026-06-15 00:25:05,852 - aqt.helper - INFO - helper 8348376704 Downloading qttools...
+2026-06-15 00:25:05,853 - aqt.installer - DEBUG - installer 8348376704 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qttools-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z
+2026-06-15 00:25:05,860 - aqt.helper - INFO - helper 8348376704 Downloading qtdeclarative...
+2026-06-15 00:25:05,860 - aqt.installer - DEBUG - installer 8348376704 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtdeclarative-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z
+2026-06-15 00:25:07,331 - aqt.helper - DEBUG - helper 8348376704 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qttools-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z
+2026-06-15 00:25:07,331 - aqt.helper - INFO - helper 8348376704 Redirected: ftp.jaist.ac.jp
+2026-06-15 00:25:07,423 - aqt.helper - DEBUG - helper 8348376704 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtbase-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z
+2026-06-15 00:25:07,424 - aqt.helper - INFO - helper 8348376704 Redirected: ftp.jaist.ac.jp
+2026-06-15 00:25:07,523 - aqt.helper - DEBUG - helper 8348376704 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtdeclarative-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z
+2026-06-15 00:25:07,523 - aqt.helper - INFO - helper 8348376704 Redirected: ftp.jaist.ac.jp
+2026-06-15 00:30:51,208 - aqt.installer - INFO - installer 8348376704 Finished installation of qttools-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z in 347.04653033
+2026-06-15 00:32:06,494 - aqt.installer - INFO - installer 8348376704 Finished installation of qtbase-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z in 422.33011938
+2026-06-15 00:35:32,365 - aqt.installer - WARNING - installer 8348376704 Caught ArchiveDownloadError, terminating installer workers
+2026-06-15 00:35:32,390 - aqt.main - ERROR - installer 8348376704 Download of 6.8.3-0-202503201723qtdeclarative-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z has error: HTTPSConnectionPool(host='ftp.jaist.ac.jp', port=443): Read timed out.
+2026-06-15 00:38:03,488 - aqt.main - INFO - installer 8348376704 aqtinstall(aqt) v3.3.0 on Python 3.13.3 [CPython Clang 17.0.0 (clang-1700.0.13.3)]
+2026-06-15 00:38:03,488 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/Updates.xml.sha256
+2026-06-15 00:38:06,720 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/extensions/qtwebengine/683/clang_64/Updates.xml.sha256
+2026-06-15 00:38:09,890 - aqt.archives - INFO - archives 8348376704 Found extension qtwebengine
+2026-06-15 00:38:09,891 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/extensions/qtpdf/683/clang_64/Updates.xml.sha256
+2026-06-15 00:38:12,648 - aqt.archives - INFO - archives 8348376704 Found extension qtpdf
+2026-06-15 00:38:13,029 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtdeclarative-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z.sha256
+2026-06-15 00:38:14,578 - aqt.helper - INFO - helper 8348376704 Downloading qtdeclarative...
+2026-06-15 00:38:14,579 - aqt.installer - DEBUG - installer 8348376704 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtdeclarative-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z
+2026-06-15 00:38:16,153 - aqt.helper - DEBUG - helper 8348376704 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/mac_x64/desktop/qt6_683/qt6_683/qt.qt6.683.clang_64/6.8.3-0-202503201723qtdeclarative-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z
+2026-06-15 00:38:16,153 - aqt.helper - INFO - helper 8348376704 Redirected: ftp.jaist.ac.jp
+2026-06-15 00:44:33,294 - aqt.installer - INFO - installer 8348376704 Finished installation of qtdeclarative-MacOS-MacOS_14-Clang-MacOS-MacOS_14-X86_64-ARM64.7z in 380.25556654
+2026-06-15 00:44:33,431 - aqt.main - INFO - installer 8348376704 Finished installation
+2026-06-15 00:44:33,431 - aqt.main - INFO - installer 8348376704 Time elapsed: 389.93207383 second
+2026-06-15 00:45:41,851 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/Updates.xml.sha256
+2026-06-15 00:45:45,617 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/Updates.xml.sha256
+2026-06-15 00:46:00,249 - aqt.main - INFO - installer 8348376704 aqtinstall(aqt) v3.3.0 on Python 3.13.3 [CPython Clang 17.0.0 (clang-1700.0.13.3)]
+2026-06-15 00:46:00,250 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/Updates.xml.sha256
+2026-06-15 00:46:04,353 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/extensions/qtwebengine/6120/clang_64/Updates.xml.sha256
+2026-06-15 00:46:07,396 - aqt.archives - INFO - archives 8348376704 Found extension qtwebengine
+2026-06-15 00:46:07,396 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/extensions/qtpdf/6120/clang_64/Updates.xml.sha256
+2026-06-15 00:46:10,499 - aqt.archives - INFO - archives 8348376704 Found extension qtpdf
+2026-06-15 00:46:10,902 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtbase-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z.sha256
+2026-06-15 00:46:10,902 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qttools-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z.sha256
+2026-06-15 00:46:10,902 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtdeclarative-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z.sha256
+2026-06-15 00:46:12,470 - aqt.helper - INFO - helper 8348376704 Downloading qtdeclarative...
+2026-06-15 00:46:12,470 - aqt.helper - INFO - helper 8348376704 Downloading qttools...
+2026-06-15 00:46:12,470 - aqt.installer - DEBUG - installer 8348376704 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtdeclarative-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z
+2026-06-15 00:46:12,470 - aqt.installer - DEBUG - installer 8348376704 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qttools-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z
+2026-06-15 00:46:12,504 - aqt.helper - INFO - helper 8348376704 Downloading qtbase...
+2026-06-15 00:46:12,504 - aqt.installer - DEBUG - installer 8348376704 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtbase-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z
+2026-06-15 00:46:13,878 - aqt.helper - DEBUG - helper 8348376704 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtbase-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z
+2026-06-15 00:46:13,878 - aqt.helper - INFO - helper 8348376704 Redirected: ftp.jaist.ac.jp
+2026-06-15 00:46:14,024 - aqt.helper - DEBUG - helper 8348376704 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qttools-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z
+2026-06-15 00:46:14,024 - aqt.helper - INFO - helper 8348376704 Redirected: ftp.jaist.ac.jp
+2026-06-15 00:46:15,936 - aqt.helper - DEBUG - helper 8348376704 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtdeclarative-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z
+2026-06-15 00:46:15,936 - aqt.helper - INFO - helper 8348376704 Redirected: ftp.jaist.ac.jp
+2026-06-15 00:47:31,079 - aqt.installer - INFO - installer 8348376704 Finished installation of qtbase-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z in 80.17606729
+2026-06-15 00:47:37,160 - aqt.installer - INFO - installer 8348376704 Finished installation of qttools-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z in 86.25703729
+2026-06-15 00:48:30,129 - aqt.installer - INFO - installer 8348376704 Finished installation of qtdeclarative-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z in 139.22421808
+2026-06-15 00:48:31,871 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/bin/qmake
+2026-06-15 00:48:31,878 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2.pc
+2026-06-15 00:48:31,878 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsWavefrontMesh.pc
+2026-06-15 00:48:31,879 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2FusionStyleImpl.pc
+2026-06-15 00:48:31,879 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2IOS.pc
+2026-06-15 00:48:31,879 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Platform.pc
+2026-06-15 00:48:31,880 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsFolderListModel.pc
+2026-06-15 00:48:31,880 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickVectorImageHelpers.pc
+2026-06-15 00:48:31,881 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlCore.pc
+2026-06-15 00:48:31,881 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Concurrent.pc
+2026-06-15 00:48:31,881 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsQmlModels.pc
+2026-06-15 00:48:31,881 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickEffects.pc
+2026-06-15 00:48:31,882 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2FluentWinUI3.pc
+2026-06-15 00:48:31,882 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlWorkerScript.pc
+2026-06-15 00:48:31,882 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2MacOSStyleImpl.pc
+2026-06-15 00:48:31,882 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Designer.pc
+2026-06-15 00:48:31,882 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2Impl.pc
+2026-06-15 00:48:31,883 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlIntegration.pc
+2026-06-15 00:48:31,883 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2IOSStyleImpl.pc
+2026-06-15 00:48:31,883 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Xml.pc
+2026-06-15 00:48:31,883 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2Universal.pc
+2026-06-15 00:48:31,884 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickDialogs2QuickImpl.pc
+2026-06-15 00:48:31,884 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsAnimation.pc
+2026-06-15 00:48:31,884 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickParticles.pc
+2026-06-15 00:48:31,884 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2Native.pc
+2026-06-15 00:48:31,885 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6UiTools.pc
+2026-06-15 00:48:31,885 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickShapesDesignHelpers.pc
+2026-06-15 00:48:31,885 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickDialogs2Utils.pc
+2026-06-15 00:48:31,885 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickTest.pc
+2026-06-15 00:48:31,886 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickDialogs2.pc
+2026-06-15 00:48:31,886 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlXmlListModel.pc
+2026-06-15 00:48:31,886 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2FluentWinUI3StyleImpl.pc
+2026-06-15 00:48:31,886 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Help.pc
+2026-06-15 00:48:31,886 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2Macos.pc
+2026-06-15 00:48:31,887 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6OpenGLWidgets.pc
+2026-06-15 00:48:31,887 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6UiPlugin.pc
+2026-06-15 00:48:31,887 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Quick.pc
+2026-06-15 00:48:31,887 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2Imagine.pc
+2026-06-15 00:48:31,888 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsSharedImage.pc
+2026-06-15 00:48:31,888 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Linguist.pc
+2026-06-15 00:48:31,888 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6PrintSupport.pc
+2026-06-15 00:48:31,888 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2Fusion.pc
+2026-06-15 00:48:31,889 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2BasicStyleImpl.pc
+2026-06-15 00:48:31,889 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickVectorImage.pc
+2026-06-15 00:48:31,889 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickNativeStyle.pc
+2026-06-15 00:48:31,889 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsStyleKit.pc
+2026-06-15 00:48:31,890 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2ImagineStyleImpl.pc
+2026-06-15 00:48:31,890 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsSynchronizer.pc
+2026-06-15 00:48:31,890 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickWidgets.pc
+2026-06-15 00:48:31,891 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickTemplates2.pc
+2026-06-15 00:48:31,891 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlMeta.pc
+2026-06-15 00:48:31,891 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlNetwork.pc
+2026-06-15 00:48:31,892 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickShapes.pc
+2026-06-15 00:48:31,892 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2Basic.pc
+2026-06-15 00:48:31,892 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Core.pc
+2026-06-15 00:48:31,892 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlDesignSupport.pc
+2026-06-15 00:48:31,892 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Gui.pc
+2026-06-15 00:48:31,893 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2MaterialStyleImpl.pc
+2026-06-15 00:48:31,893 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2Material.pc
+2026-06-15 00:48:31,893 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6OpenGL.pc
+2026-06-15 00:48:31,894 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlLocalStorage.pc
+2026-06-15 00:48:31,894 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsSettings.pc
+2026-06-15 00:48:31,894 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Test.pc
+2026-06-15 00:48:31,895 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Network.pc
+2026-06-15 00:48:31,895 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Sql.pc
+2026-06-15 00:48:31,895 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsPlatform.pc
+2026-06-15 00:48:31,895 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickLayouts.pc
+2026-06-15 00:48:31,896 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6DBus.pc
+2026-06-15 00:48:31,896 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlCompiler.pc
+2026-06-15 00:48:31,896 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Widgets.pc
+2026-06-15 00:48:31,896 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6Qml.pc
+2026-06-15 00:48:31,897 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6LabsStyleKitImpl.pc
+2026-06-15 00:48:31,897 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QuickControls2UniversalStyleImpl.pc
+2026-06-15 00:48:31,897 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/pkgconfig/Qt6QmlModels.pc
+2026-06-15 00:48:31,898 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QmlLS.prl
+2026-06-15 00:48:31,898 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6FbSupport.prl
+2026-06-15 00:48:31,899 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QmlPreview.prl
+2026-06-15 00:48:31,899 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QmlDebug.prl
+2026-06-15 00:48:31,899 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QmlTypeRegistrar.prl
+2026-06-15 00:48:31,899 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QuickTestUtils.prl
+2026-06-15 00:48:31,900 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QuickControlsTestUtils.prl
+2026-06-15 00:48:31,900 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6DeviceDiscoverySupport.prl
+2026-06-15 00:48:31,900 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QmlLint.prl
+2026-06-15 00:48:31,900 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QmlDom.prl
+2026-06-15 00:48:31,900 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6PacketProtocol.prl
+2026-06-15 00:48:31,900 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QmlFormat.prl
+2026-06-15 00:48:31,901 - aqt.updater - INFO - updater 8348376704 Patching /Users/kele/Qt/aqt/6.12.0/macos/lib/libQt6QmlToolingSettings.prl
+2026-06-15 00:48:31,901 - aqt.main - INFO - installer 8348376704 Finished installation
+2026-06-15 00:48:31,901 - aqt.main - INFO - installer 8348376704 Time elapsed: 151.64695754 second
+2026-06-15 00:49:45,520 - aqt.main - INFO - installer 8348376704 aqtinstall(aqt) v3.3.0 on Python 3.13.3 [CPython Clang 17.0.0 (clang-1700.0.13.3)]
+2026-06-15 00:49:45,521 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/Updates.xml.sha256
+2026-06-15 00:49:49,698 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/extensions/qtwebengine/6120/clang_64/Updates.xml.sha256
+2026-06-15 00:49:52,427 - aqt.archives - INFO - archives 8348376704 Found extension qtwebengine
+2026-06-15 00:49:52,427 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/extensions/qtpdf/6120/clang_64/Updates.xml.sha256
+2026-06-15 00:49:55,391 - aqt.archives - INFO - archives 8348376704 Found extension qtpdf
+2026-06-15 00:49:55,722 - aqt.helper - DEBUG - helper 8348376704 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtsvg-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z.sha256
+2026-06-15 00:49:57,183 - aqt.helper - INFO - helper 8348376704 Downloading qtsvg...
+2026-06-15 00:49:57,183 - aqt.installer - DEBUG - installer 8348376704 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtsvg-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z
+2026-06-15 00:49:58,720 - aqt.helper - DEBUG - helper 8348376704 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/mac_x64/desktop/qt6_6120/qt6_6120/qt.qt6.6120.clang_64/6.12.0-0-202606090333qtsvg-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z
+2026-06-15 00:49:58,720 - aqt.helper - INFO - helper 8348376704 Redirected: ftp.jaist.ac.jp
+2026-06-15 00:49:59,638 - aqt.installer - INFO - installer 8348376704 Finished installation of qtsvg-MacOS-MacOS_15-Clang-MacOS-MacOS_15-X86_64-ARM64.7z in 3.91750633
+2026-06-15 00:49:59,725 - aqt.main - INFO - installer 8348376704 Finished installation
+2026-06-15 00:49:59,725 - aqt.main - INFO - installer 8348376704 Time elapsed: 14.20445212 second

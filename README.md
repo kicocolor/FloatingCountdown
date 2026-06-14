@@ -36,6 +36,20 @@ ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm install
 
 ## 发布与打包
 
+### Qt Quick 原生版
+
+项目同时提供 Qt Quick / QML 原生版，目录位于 `native/qt-qml/`。Qt 版目标是比 Electron 包更小，并提供更接近现代悬浮工具的界面效果；当前优先生成 Windows ARM64 包。
+
+Windows ARM64 构建与打包：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File native\qt-qml\scripts\package-windows-arm64.ps1
+```
+
+产物位于：
+
+- `release-native/FloatingCountdown-win32-arm64-qt.zip`
+
 ### 下载发布包
 
 已发布的 Windows 和 macOS ZIP 包可以在 GitHub Releases 下载：
