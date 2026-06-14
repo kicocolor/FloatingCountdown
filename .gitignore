@@ -5,3 +5,4 @@ release/FloatingCountdown-darwin-arm64/
 release/FloatingCountdown-darwin-x64/
 .DS_Store
 release/*.zip
+release-gitee/

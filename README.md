@@ -34,11 +34,14 @@ ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm install
 5. 点击 `Pin` 会最小化设置窗口，并显示一个置顶时间悬浮窗。
 6. 在时间悬浮窗点击 `Unpin`，会关闭时间窗并恢复设置窗口。
 
-## 下载发布包
+## 发布与打包
+
+### 下载发布包
 
 已发布的 Windows 和 macOS ZIP 包可以在 GitHub Releases 下载：
 
 - <https://github.com/kicocolor/FloatingCountdown/releases>
+- 最新版本：<https://github.com/kicocolor/FloatingCountdown/releases/tag/v1.0.1>
 
 当前发布包包含：
 
@@ -47,78 +50,52 @@ ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm install
 - `FloatingCountdown-darwin-x64.zip`：macOS Intel
 - `FloatingCountdown-darwin-arm64.zip`：macOS Apple Silicon
 
-## 打包 Windows 便携包
+### 打包命令
 
-推荐使用国内镜像打包，避免 Electron Windows 运行时下载过慢。
-
-同时打包 Windows x64 和 arm64：
+推荐使用国内镜像打包，避免 Electron 运行时下载过慢。
 
 ```bash
 ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm run package:win
-```
-
-只打包 Windows x64：
-
-```bash
 ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm run package:win:x64
-```
-
-只打包 Windows arm64：
-
-```bash
 ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm run package:win:arm64
+npm run package:mac
+npm run package:mac:x64
+npm run package:mac:arm64
 ```
 
-如果网络环境稳定，也可以不加 `ELECTRON_MIRROR` 直接运行对应 npm 命令。
-
-如果下载卡住或失败，可以清理半截缓存后重试：
+如果网络环境稳定，也可以不加 `ELECTRON_MIRROR`。如果下载卡住或失败，可以清理半截缓存后重试：
 
 ```bash
 rm -rf ~/Library/Caches/electron
 ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm run package:win
 ```
 
-打包完成后，产物位于 `release/`：
+为减少依赖，macOS 交叉打包不会写入 Windows 版本信息、图标或签名，因此不需要安装 Wine。
+
+### 打包产物
+
+完整 ZIP 产物位于 `release/`，适合上传到 GitHub Releases：
 
 - `FloatingCountdown-win32-x64.zip`
 - `FloatingCountdown-win32-arm64.zip`
-
-解压对应架构的 ZIP 后，运行目录内的 `FloatingCountdown.exe` 即可。
-
-为减少依赖，macOS 交叉打包不会写入 Windows 版本信息、图标或签名，因此不需要安装 Wine。
-
-## 打包 macOS 应用包
-
-同时打包 macOS Intel x64 和 Apple Silicon arm64：
-
-```bash
-npm run package:mac
-```
-
-只打包 macOS Intel x64：
-
-```bash
-npm run package:mac:x64
-```
-
-只打包 macOS Apple Silicon arm64：
-
-```bash
-npm run package:mac:arm64
-```
-
-如果 Electron 下载卡住，可以使用镜像或启用代理后重试。例如：
-
-```bash
-ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ npm run package:mac
-```
-
-打包完成后，产物位于 `release/`：
-
 - `FloatingCountdown-darwin-x64.zip`
 - `FloatingCountdown-darwin-arm64.zip`
 
-解压对应架构的 ZIP 后，运行 `FloatingCountdown.app` 即可。
+用于 Gitee 发行版上传的产物位于 `release-gitee/`。由于 Gitee 单个附件存在 100 MB 左右的大小限制，超过限制的 ZIP 会拆成 `.part-*` 分卷：
+
+- `FloatingCountdown-darwin-arm64.zip`
+- `FloatingCountdown-darwin-x64.zip.part-00`
+- `FloatingCountdown-darwin-x64.zip.part-01`
+- `FloatingCountdown-win32-x64.zip.part-00`
+- `FloatingCountdown-win32-x64.zip.part-01`
+- `FloatingCountdown-win32-arm64.zip.part-00`
+- `FloatingCountdown-win32-arm64.zip.part-01`
+
+Gitee 分卷合并说明见 `release-gitee/README-GITEE-RELEASE.txt`，校验值见 `release-gitee/SHA256SUMS.txt`。
+
+### 运行打包产物
+
+Windows 解压对应架构的 ZIP 后，运行目录内的 `FloatingCountdown.exe`。macOS 解压对应架构的 ZIP 后，运行 `FloatingCountdown.app`。
 
 ## 当前范围
 
