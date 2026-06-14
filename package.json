@@ -5,6 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "package:mac": "node scripts/package-macos.js",
+    "package:mac:arm64": "node scripts/package-macos.js --arm64",
+    "package:mac:x64": "node scripts/package-macos.js --x64",
     "package:win:x64": "node scripts/package-windows.js --x64",
     "package:win": "node scripts/package-windows.js",
     "package:win:arm64": "node scripts/package-windows.js --arm64"
