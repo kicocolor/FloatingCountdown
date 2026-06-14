@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Countdown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="timer-card" aria-label="桌面悬浮倒计时设置">
+      <header class="titlebar drag-region">
+        <div>
+          <p class="eyebrow">Focus Capsule</p>
+          <h1>倒计时</h1>
+        </div>
+        <div class="window-actions no-drag">
+          <button id="pinButton" class="icon-button" type="button" aria-pressed="false" title="开启时间悬浮窗">Pin</button>
+          <button id="closeButton" class="icon-button close" type="button" title="关闭">×</button>
+        </div>
+      </header>
+
+      <section class="display-wrap" aria-live="polite">
+        <div id="timeDisplay" class="time-display">25:00</div>
+        <p id="statusText" class="status-text">设置分钟和秒数后点击开始</p>
+      </section>
+
+      <section class="inputs no-drag" aria-label="时间设置">
+        <label>
+          <span>分钟</span>
+          <input id="minutesInput" type="number" min="0" max="9999" step="1" value="1" inputmode="numeric" />
+        </label>
+        <label>
+          <span>秒数</span>
+          <input id="secondsInput" type="number" min="0" max="59" step="1" value="0" inputmode="numeric" />
+        </label>
+      </section>
+
+      <section class="controls no-drag" aria-label="倒计时控制">
+        <button id="startPauseButton" class="primary-button" type="button">开始</button>
+        <button id="resetButton" class="secondary-button" type="button">重置</button>
+      </section>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

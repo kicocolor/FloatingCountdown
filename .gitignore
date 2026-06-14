@@ -1,0 +1,5 @@
+node_modules/
+release/FloatingCountdown-win32-arm64/
+release/FloatingCountdown-win32-x64/
+.DS_Store
+release/*.zip

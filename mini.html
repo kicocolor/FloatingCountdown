@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Mini</title>
+    <link rel="stylesheet" href="mini.css" />
+  </head>
+  <body>
+    <main id="miniCard" class="mini-card drag-region" aria-label="倒计时时间悬浮窗">
+      <button id="unpinButton" class="unpin-button no-drag" type="button" title="取消 Pin 并恢复设置窗口">Unpin</button>
+      <div id="miniTimeDisplay" class="mini-time" aria-live="polite">01:00</div>
+      <p id="miniStatusText" class="mini-status">倒计时运行中</p>
+    </main>
+
+    <script src="mini.js"></script>
+  </body>
+</html>

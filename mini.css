@@ -1,0 +1,171 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --glass: rgba(9, 14, 26, 0.78);
+  --rim: rgba(125, 249, 255, 0.32);
+  --text: #f8fbff;
+  --muted: #93a4bd;
+  --accent: #22d3ee;
+  --hot: #fb7185;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: transparent;
+  color: var(--text);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  user-select: none;
+}
+
+button {
+  font: inherit;
+}
+
+.drag-region {
+  -webkit-app-region: drag;
+}
+
+.no-drag,
+button {
+  -webkit-app-region: no-drag;
+}
+
+.mini-card {
+  position: relative;
+  width: 214px;
+  min-height: 114px;
+  padding: 21px 16px 16px;
+  border: 1px solid var(--rim);
+  border-radius: 24px;
+  background:
+    linear-gradient(115deg, rgba(34, 211, 238, 0.14), transparent 42%),
+    radial-gradient(circle at 82% 20%, rgba(124, 58, 237, 0.4), transparent 34%),
+    var(--glass);
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-align: center;
+  transform-origin: 50% 18%;
+}
+
+.mini-card.opening {
+  animation: miniOpen 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.mini-card.closing {
+  pointer-events: none;
+  animation: miniClose 180ms cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+.mini-card::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+.unpin-button {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  height: 24px;
+  padding: 0 9px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  transition: 150ms ease;
+}
+
+.unpin-button:hover {
+  border-color: rgba(34, 211, 238, 0.52);
+  background: rgba(34, 211, 238, 0.16);
+  color: #e4fdff;
+}
+
+.mini-time {
+  margin-top: 14px;
+  font-variant-numeric: tabular-nums;
+  font-size: 43px;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: -0.075em;
+  text-shadow: 0 0 24px rgba(34, 211, 238, 0.2);
+}
+
+.mini-status {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mini-card.finished .mini-time {
+  color: #fda4af;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.72;
+    transform: scale(0.985);
+  }
+}
+
+@keyframes miniOpen {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.9);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes miniClose {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-7px) scale(0.92);
+    filter: blur(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
